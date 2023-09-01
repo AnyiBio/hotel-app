@@ -19,7 +19,6 @@ export const DataComponent: React.FunctionComponent<Props> = ({
   onSave,
   onCancel,
 }) => {
-  console.log(booking);
   return (
     <Formik
       initialValues={booking}

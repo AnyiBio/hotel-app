@@ -38,7 +38,6 @@ export const filterReducer = (state, action) => {
         ),
       };
     case 'SET_PEOPLE':
-      console.log("room.capacity", action.payload)
       return {
         ...state,
         filter: { ...state.filter, hotel: action.payload },

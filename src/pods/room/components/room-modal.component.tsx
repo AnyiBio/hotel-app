@@ -25,7 +25,6 @@ export const RoomModalComponent: React.FunctionComponent<Props> = ({
       emergencyContactPhone: '',
     },
     onSubmit: (values) => {
-      console.log(values);
     },
   });
   return (
