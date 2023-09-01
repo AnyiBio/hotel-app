@@ -11,7 +11,7 @@ export const roomBar = css`
   gap: ${theme.spacing(1.5)};
 
   ${theme.breakpoints.up('md')} {
-    display: inherit;
+    flex-direction: row;
   }
 `;
 
