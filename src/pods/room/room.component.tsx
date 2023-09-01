@@ -28,7 +28,10 @@ export const RoomComponent: React.FunctionComponent<Props> = ({
           boxShadow: 'none'
           }}
         >
-          <Toolbar color="dark">
+          <Toolbar
+            color="dark"
+            className={classes.roomBar}
+          >
             <Select
               label="Ciudad destino"
               value={state.filter.city}

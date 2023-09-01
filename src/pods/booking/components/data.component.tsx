@@ -47,13 +47,13 @@ export const DataComponent: React.FunctionComponent<Props> = ({
             disabled
           />
            <TextFieldComponent
-            label="Costo"
+            label="Base"
             name="details.base"
             className={classes.base}
             disabled
           />
            <TextFieldComponent
-            label="Costo"
+            label="Tipo de Habitación"
             name="details.kindOfRoom"
             className={classes.kindOfRoom}
             disabled
