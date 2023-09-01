@@ -44,14 +44,8 @@ export const DataComponent: React.FunctionComponent<Props> = ({
             name="room"
             className={classes.room}
           />
-          <CheckboxComponent
-            name="isActive"
-            label="Activo"
-            color="primary"
-            className={classes.isActive}
-          />
           <CommandFooterComponent
-            labels={{cancelButton: "Volver"}}
+            labels={{cancelButton: "Atrás"}}
             onCancel={onCancel}
             className={classes.commands}
           />

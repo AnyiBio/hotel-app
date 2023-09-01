@@ -45,7 +45,7 @@ export const RoomListComponent: React.FunctionComponent<Props> = ({
         createButton: 'Nuevo hotel',
         deleteTitle: 'Eliminar hotel',
         deleteContent: props => contentRender(props),
-        closeButton: 'Volver',
+        closeButton: 'Atrás',
         acceptButton: 'Aceptar',
       }}
       enablePagination={true}

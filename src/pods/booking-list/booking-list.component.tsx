@@ -40,7 +40,7 @@ export const BookingListComponent: React.FunctionComponent<Props> = ({
         searchPlaceholder: 'Buscar habitación',
         deleteTitle: 'Eliminar Empleado',
         deleteContent: props => contentRender(props),
-        closeButton: 'Volver',
+        closeButton: 'Atrás',
         acceptButton: 'Aceptar',
       }}
       enableSearch={true}
