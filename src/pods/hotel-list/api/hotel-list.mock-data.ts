@@ -1,0 +1,66 @@
+import { Hotel } from './hotel-list.api-model';
+
+export const mockHotelList: Hotel[] = [
+  {
+    id: '1',
+    isActive: true,
+    code: '23212',
+    name: 'Hotel San Fernando Plaza',
+    stars: '⭐⭐⭐⭐⭐',
+    creationDate: '01/08/2018',
+  },
+  {
+    id: '2',
+    isActive: true,
+    code: '4323',
+    name: 'Hotel Dann Carlton Belfort Medellin',
+    stars: '⭐⭐⭐⭐⭐',
+    creationDate: '01/04/2018',
+  },
+  {
+    id: '3',
+    isActive: true,
+    code: '002',
+    name: 'Ibis Medellin',
+    stars: '⭐⭐⭐⭐⭐',
+    creationDate: '01/04/2018',
+  },
+  {
+    id: '4',
+    isActive: true,
+    code: '003',
+    name: 'Viaggio Medellín Grand Select',
+    stars: '⭐⭐⭐⭐',
+    creationDate: '01/05/2019',
+  },
+  {
+    id: '5',
+    isActive: false,
+    code: '2586',
+    name: 'Hotel Central Plaza',
+    creationDate: '01/10/2018',
+  },
+  {
+    id: '6',
+    isActive: false,
+    code: '3025',
+    name: 'Hotel Casa Malibú',
+    creationDate: '01/03/2019',
+  },
+  {
+    id: '7',
+    isActive: false,
+    code: '8563',
+    name: 'Hotel Med 70',
+    stars: '⭐⭐⭐',
+    creationDate: '01/11/2020',
+  },
+  {
+    id: '8',
+    isActive: true,
+    code: '4125',
+    name: 'Hotel Estadio Real ',
+    stars: '⭐⭐⭐',
+    creationDate: '01/07/2020',
+  },
+];

@@ -1,0 +1,68 @@
+import { Booking } from './booking-list.api-model';
+
+export const mockBookingList: Booking[] = [
+  {
+    id: '1',
+    isActive: true,
+    room: '1A',
+    hotelName: 'Hotel San Fernando Plaza',
+    startDate: '02/09/2023',
+    endDate: '11/09/2023',
+  },
+  {
+    id: '2',
+    isActive: true,
+    room: '2A',
+    hotelName: 'Hotel San Fernando Plaza',
+    startDate: '20/10/2023',
+    endDate: '21/10/2023',
+  },
+  {
+    id: '3',
+    isActive: false,
+    room: '6B',
+    hotelName: 'Hotel Dann Carlton Belfort Medellin',
+    startDate: '05/09/2023',
+    endDate: '21/09/2023',
+  },
+  {
+    id: '4',
+    isActive: true,
+    room: '3A',
+    hotelName: 'Ibis Medellin',
+    startDate: '15/09/2023',
+    endDate: '21/09/2023',
+  },
+  {
+    id: '5',
+    isActive: false,
+    room: '301A',
+    hotelName: 'Viaggio Medellín Grand Select',
+    startDate: '16/09/2023',
+    endDate: '22/09/2023',
+  },
+  {
+    id: '6',
+    isActive: true,
+    room: '305B',
+    hotelName: 'Viaggio Medellín Grand Select',
+    startDate: '12/12/2023',
+    endDate: '15/12/2023',
+  },
+  {
+    id: '7',
+    isActive: false,
+    room: '201',
+    hotelName: 'Hotel Med 70',
+    startDate: '12/11/2023',
+    endDate: '18/11/2023',
+  },
+  {
+    id: '8',
+    isActive: true,
+    room: '104',
+    hotelName: 'Hotel Med 70',
+    startDate: '05/11/2023',
+    endDate: '13/11/2023',
+  },
+];
