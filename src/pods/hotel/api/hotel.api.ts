@@ -1,6 +1,7 @@
 import { Hotel } from './hotel.api-model';
-import { mockRoom } from './hotel.mock-data';
+import { mockHotel, mockHotelList } from './hotel.mock-data';
 
 export const getHotelById = async (id: string): Promise<Hotel> => {
-  return mockRoom;
+  const findHotel = mockHotelList.find((el => el.id === id));
+  return !findHotel ? mockHotel : findHotel;
 };

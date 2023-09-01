@@ -4,11 +4,12 @@ export interface Hotel {
   externalId?: string;
   comments?: string;
   isActive: boolean;
+  stars?: string;
   rooms: RoomSummary[];
 }
 
 export interface RoomSummary {
   id: string;
   isAssigned?: boolean;
-  roomName: string;
+  room: string;
 }

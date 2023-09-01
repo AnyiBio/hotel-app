@@ -13,12 +13,12 @@ export const form = css`
   }
 `;
 
-export const month = css`
-  grid-area: month;
+export const name = css`
+  grid-area: name;
 `;
 
-export const year = css`
-  grid-area: year;
+export const stars = css`
+  grid-area: stars;
 `;
 
 export const commands = css`

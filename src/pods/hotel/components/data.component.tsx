@@ -3,7 +3,7 @@ import { Formik, Form } from 'formik';
 import { TextFieldComponent, CheckboxComponent } from 'common/components';
 import { CommandFooterComponent } from '../../../common-app/command-footer';
 import { Hotel } from '../hotel.vm';
-
+import * as classes from './data.styles';
 interface Props {
   hotel: Hotel;
   onSave: (hotel: Hotel) => void;
@@ -28,10 +28,26 @@ export const DataComponent: React.FunctionComponent<Props> = ({
               readOnly: true,
             }}
           />
-          <TextFieldComponent label="Nombre" name="name" />
-          <TextFieldComponent label="Id Externo" name="externalId" />
-          <TextFieldComponent label="Comentarios" name="comments" multiline />
-          <CheckboxComponent label="Activo" name="isActive" color="primary" />
+          <TextFieldComponent
+            label="Nombre"
+            name="name"
+            className={classes.name}
+          />
+          <TextFieldComponent
+            label="Estrellas"
+            name="stars"
+            className={classes.stars}
+          />
+          <TextFieldComponent
+            label="Comentarios"
+            name="comments"
+            className={classes.name}
+            multiline />
+          <CheckboxComponent
+            label="Activo"
+            name="isActive"
+            className={classes.name}
+            color="primary" />
           <CommandFooterComponent onCancel={onCancel} />
         </Form>
       )}

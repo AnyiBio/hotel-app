@@ -116,6 +116,7 @@ export const RoomModalComponent: React.FunctionComponent<Props> = ({
         type="submit"
         color="secondary"
         variant="contained"
+        onClick={onClose}
         >
           Reservar
       </Button>

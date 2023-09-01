@@ -18,7 +18,7 @@ export const RoomComponent: React.FunctionComponent<Props> = ({
   return (
     <>
       <TableContainer
-        columns={['Hablitada', 'Habitación']}
+        columns={['Habilitada', 'Habitación']}
         rows={roomSummaryList}
         className={className}
         rowRenderer={(rowProps: RowRendererProps<BookingDetail>) => (

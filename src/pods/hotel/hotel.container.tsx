@@ -26,6 +26,7 @@ export const HotelContainer: React.FunctionComponent = () => {
   };
 
   const handleSave = (hotel: Hotel) => {
+    history.back();
     console.log('Guardado');
   };
 

@@ -10,7 +10,7 @@ export interface Hotel {
 export interface BookingDetail {
   id: string;
   isAssigned?: boolean;
-  roomName: string;
+  room: string;
 }
 
 export const createEmptyHotel = (): Hotel => ({

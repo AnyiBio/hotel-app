@@ -32,37 +32,49 @@ export const DataComponent: React.FunctionComponent<Props> = ({
             label="Nombre del Hotel"
             name="hotelName"
             className={classes.hotelName}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
           <TextFieldComponent
             label="Nombre del cliente"
             name="clientName"
             className={classes.name}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
           <TextFieldComponent
             label="Costo"
             name="details.cost"
             className={classes.cost}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
            <TextFieldComponent
             label="Base"
             name="details.base"
             className={classes.base}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
            <TextFieldComponent
             label="Tipo de Habitación"
             name="details.kindOfRoom"
             className={classes.kindOfRoom}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
           <TextFieldComponent
             label="Habitación"
             name="room"
             className={classes.room}
-            disabled
+            InputProps={{
+              readOnly: true,
+            }}
           />
           <CommandFooterComponent
             labels={{cancelButton: "Atrás"}}
