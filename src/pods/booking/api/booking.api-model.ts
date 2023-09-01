@@ -1,6 +1,7 @@
 export interface Booking {
   id: string;
-  name: string;
+  room: string;
+  hotelName: string;
   isActive: boolean;
   clientName: string;
   bookingStartDate: string;

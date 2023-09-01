@@ -9,10 +9,9 @@ import { Booking } from '../booking.vm';
 
 type Props = RowRendererProps<Booking>;
 
-export const RoomRowComponent: React.FunctionComponent<Props> = ({
+export const BookingRowComponent: React.FunctionComponent<Props> = ({
   row,
 }) => {
-  console.log(row)
   return (
     <RowComponent>
       <CellComponent>{row.details.cost}</CellComponent>

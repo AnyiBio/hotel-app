@@ -11,14 +11,12 @@ import * as classes from './booking.styles';
 
 interface Props {
   booking: Booking;
-  isEditMode: boolean;
   onSave: (booking: Booking) => void;
   onCancel: () => void;
 }
 
 export const RoomComponent: React.FunctionComponent<Props> = ({
-  booking: room,
-  isEditMode,
+  booking,
   onSave,
   onCancel,
 }) => {
@@ -32,10 +30,9 @@ export const RoomComponent: React.FunctionComponent<Props> = ({
       </AppBar>
       <TabPanelComponent value={tab} index={0}>
         <DataComponent
-          booking={room}
+          booking={booking}
           className={classes.root}
           onSave={onSave}
-          isEditMode={isEditMode}
           onCancel={onCancel}
         />
       </TabPanelComponent>

@@ -1,6 +1,6 @@
 export interface Booking {
   id: string;
-  name: string;
+  room: string;
   isActive: boolean;
   clientName: string,
   bookingStartDate: string,
@@ -16,7 +16,7 @@ export interface BookingDetails {
 
 export const createEmptyRoom = (): Booking => ({
   id: '',
-  name: '',
+  room: '',
   isActive: true,
   clientName: '',
   bookingStartDate: '',

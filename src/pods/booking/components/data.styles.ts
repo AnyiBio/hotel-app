@@ -1,23 +1,16 @@
 import { css } from '@emotion/css';
 import { theme } from 'core/theme';
 
-interface Props {
-  isEditMode: boolean;
-}
-
-const getDynamicAreaNames = (props: Props) => {
-  return props.isEditMode
-    ? `'id clientName'`
-    : `'id temporalPassword' 'hotelName .'`;
-};
-
-export const form = (props: Props) => css`
+export const form = () => css`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     'clientName'
     'room'
-    'isActive'
+    'hotelName'
+    'cost'
+    'base'
+    'kindOfRoom'
     'commands'
     'commands';
   grid-row-gap: ${theme.spacing(2)};
@@ -26,9 +19,9 @@ export const form = (props: Props) => css`
   ${theme.breakpoints.up('md')} {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      ${getDynamicAreaNames(props)}
-      'email .'
-      'isActive .'
+      'hotelName cost'
+      'clientName base'
+      'room kindOfRoom'
       'commands commands';
   }
 `;
@@ -37,16 +30,24 @@ export const name = css`
   grid-area: clientName;
 `;
 
+export const hotelName = css`
+  grid-area: hotelName;
+`;
+
 export const room = css`
   grid-area: room;
 `;
 
-export const email = css`
-  grid-area: email;
+export const cost = css`
+  grid-area: cost;
 `;
 
-export const isActive = css`
-  grid-area: isActive;
+export const base = css`
+  grid-area: base;
+`;
+
+export const kindOfRoom = css`
+  grid-area: kindOfRoom;
 `;
 
 export const commands = css`

@@ -29,7 +29,8 @@ describe('./pods/room/room.mappers', () => {
     // Arrange
     const booking: apiModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      hotelName: 'Hotel',
+      room: 'test name',
       isActive: true,
       details: null,
       clientName: '',
@@ -39,7 +40,7 @@ describe('./pods/room/room.mappers', () => {
 
     const expectedResult: viewModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      room: 'test name',
       isActive: true,
       clientName: '',
       bookingStartDate: '',
@@ -57,7 +58,8 @@ describe('./pods/room/room.mappers', () => {
     // Arrange
     const booking: apiModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      hotelName: 'Hotel',
+      room: 'test name',
       isActive: true,
       clientName: '',
       bookingStartDate: '',
@@ -67,7 +69,7 @@ describe('./pods/room/room.mappers', () => {
 
     const expectedResult: viewModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      room: 'test name',
       clientName: '',
       bookingStartDate: '',
       bookingEndDate: '',
@@ -90,7 +92,8 @@ describe('./pods/room/room.mappers', () => {
     // Arrange
     const booking: apiModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      hotelName: 'Hotel',
+      room: 'test name',
       isActive: true,
       clientName: '',
       bookingStartDate: '',
@@ -104,7 +107,7 @@ describe('./pods/room/room.mappers', () => {
 
     const expectedResult: viewModel.Booking = {
       id: 'test id',
-      name: 'test name',
+      room: 'test name',
       clientName: '',
       isActive: true,
       bookingStartDate: '',

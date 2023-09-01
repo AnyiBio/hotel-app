@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
-import { TextFieldComponent, CheckboxComponent } from 'common/components';
+import { TextFieldComponent } from 'common/components';
 import { CommandFooterComponent } from '../../../common-app/command-footer';
 import { cx } from '@emotion/css';
 import { Booking } from '../booking.vm';
@@ -9,40 +9,60 @@ import * as classes from './data.styles';
 interface Props {
   booking: Booking;
   className?: string;
-  isEditMode: boolean;
-  onSave: (room: Booking) => void;
+  onSave: (booking: Booking) => void;
   onCancel: () => void;
 }
 
 export const DataComponent: React.FunctionComponent<Props> = ({
-  booking: room,
+  booking,
   className,
   onSave,
-  isEditMode,
   onCancel,
 }) => {
-  console.log(room);
-  React.useEffect(() => {
-
-  }, [isEditMode]);
-
+  console.log(booking);
   return (
     <Formik
-      initialValues={room}
+      initialValues={booking}
       enableReinitialize={true}
       onSubmit={onSave}
     >
       {() => (
-        <Form className={cx(classes.form({ isEditMode }), className)}>
+        <Form className={cx(classes.form(), className)}>
           <TextFieldComponent
-            label="Nombre"
+            label="Nombre del Hotel"
+            name="hotelName"
+            className={classes.hotelName}
+            disabled
+          />
+          <TextFieldComponent
+            label="Nombre del cliente"
             name="clientName"
             className={classes.name}
+            disabled
+          />
+          <TextFieldComponent
+            label="Costo"
+            name="details.cost"
+            className={classes.cost}
+            disabled
+          />
+           <TextFieldComponent
+            label="Costo"
+            name="details.base"
+            className={classes.base}
+            disabled
+          />
+           <TextFieldComponent
+            label="Costo"
+            name="details.kindOfRoom"
+            className={classes.kindOfRoom}
+            disabled
           />
           <TextFieldComponent
             label="Habitación"
             name="room"
             className={classes.room}
+            disabled
           />
           <CommandFooterComponent
             labels={{cancelButton: "Atrás"}}
